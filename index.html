@@ -5,14 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sai Praneeth Medisetti | Business &amp; Data Analyst</title>
 <meta name="description" content="Portfolio of Sai Praneeth Medisetti, Business Analyst specializing in data analytics, BI dashboards, and process improvement with Python, SQL, and Tableau.">
-<meta property="og:title" content="Sai Praneeth Medisetti | Business & Data Analyst">
-<meta property="og:description" content="I turn messy data into clear decisions. Python · SQL · Tableau · Process Improvement.">
+<meta property="og:title" content="Sai Praneeth Medisetti — Business &amp; Data Analyst">
+<meta property="og:description" content="Portfolio of Sai Praneeth Medisetti, Business Analyst specializing in data analytics, BI dashboards, and process improvement with Python, SQL, and Tableau.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://saipraneeth2.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sai Praneeth Medisetti — Business &amp; Data Analyst">
+<meta name="twitter:description" content="Portfolio of Sai Praneeth Medisetti, Business Analyst specializing in data analytics, BI dashboards, and process improvement with Python, SQL, and Tableau.">
 <meta name="theme-color" content="#0A1120">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3864'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='bold' fill='%234E9EFF' text-anchor='middle'%3ESP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 <script>
 /* Restore saved theme before first paint (guarded, safe everywhere) */
 (function(){try{var t=localStorage.getItem('spm-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
@@ -54,7 +58,7 @@ body{
   transition:background .3s ease,color .3s ease;
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
 }
-h1,h2,h3,h4{font-family:'Sora','Inter',sans-serif;color:var(--heading);line-height:1.2}
+h1,h2,h3,h4{font-family:'Space Grotesk','Inter',sans-serif;color:var(--heading);line-height:1.2}
 a{color:var(--accent);text-decoration:none}
 img,svg{display:block}
 svg.ic{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
@@ -74,13 +78,13 @@ svg.ic{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-
 .site-nav.scrolled,body.menu-open .site-nav{background:var(--nav-bg);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom-color:var(--border)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:inline-flex;align-items:center;gap:11px}
-.brand-mark{width:35px;height:35px;border-radius:9px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:700;font-size:.84rem;letter-spacing:.02em;box-shadow:0 4px 12px rgba(46,116,181,.35)}
+.brand-mark{width:35px;height:35px;border-radius:9px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.84rem;letter-spacing:.02em;box-shadow:0 4px 12px rgba(46,116,181,.35)}
 .brand-name{font-weight:600;color:var(--heading);font-size:.98rem}
 .nav-links{display:flex;gap:30px}
 .nav-link{position:relative;padding:6px 0;font-size:.93rem;font-weight:500;color:var(--muted);transition:color .2s ease}
-.nav-link::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;border-radius:2px;background:var(--accent);transition:width .25s ease}
+.nav-link::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
 .nav-link:hover,.nav-link.active{color:var(--accent)}
-.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
 .nav-actions{display:flex;align-items:center;gap:10px}
 .icon-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s ease,color .2s ease,transform .2s ease}
 .icon-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
@@ -120,7 +124,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 .pulse-dot{width:8px;height:8px;border-radius:50%;background:#34D399;animation:pulse 2.2s infinite;flex:none}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.45)}70%{box-shadow:0 0 0 9px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
 .hero-eyebrow{color:var(--accent);font-weight:600;font-size:1.02rem;letter-spacing:.06em;margin-bottom:12px}
-.hero h1{font-size:clamp(2.7rem,7.5vw,4.7rem);font-weight:800;letter-spacing:-.025em;line-height:1.06;margin-bottom:22px;background:linear-gradient(110deg,var(--heading) 45%,var(--accent) 78%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;letter-spacing:-.025em;line-height:1.06;margin-bottom:22px;background:linear-gradient(110deg,var(--heading) 45%,var(--accent) 78%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 .hero-subtitle{font-size:clamp(1.05rem,2.2vw,1.32rem);font-weight:600;color:var(--text);margin-bottom:16px}
 .hero-subtitle .sep{color:var(--accent);margin:0 12px;font-weight:400}
 .hero-tagline{font-size:clamp(1.02rem,2vw,1.2rem);color:var(--muted);margin-bottom:42px}
@@ -184,7 +188,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 /* ============ PROJECTS ============ */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px}
 .project-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease,background .3s ease,opacity .7s cubic-bezier(.22,.61,.36,1)}
-.project-card:hover{transform:translateY(-5px);border-color:var(--chip-border);box-shadow:var(--shadow)}
+.project-card:hover{transform:translateY(-5px);border-color:var(--chip-border);box-shadow:inset 4px 0 0 var(--accent),var(--shadow)}
 .project-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
 .project-glyph{width:46px;height:46px;border-radius:12px;background:var(--chip-bg);border:1px solid var(--chip-border);color:var(--accent);display:grid;place-items:center}
 .gh-link{color:var(--muted);transition:color .2s ease,transform .2s ease}
@@ -217,7 +221,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 /* ============ FOOTER ============ */
 .site-footer{border-top:1px solid var(--border);padding:44px 0 32px}
 .footer-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;margin-bottom:28px}
-.footer-name{font-family:'Sora',sans-serif;font-weight:700;font-size:1.05rem;color:var(--heading);margin-bottom:4px}
+.footer-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;color:var(--heading);margin-bottom:4px}
 .footer-tag{color:var(--muted);font-size:.9rem}
 .footer-bottom{border-top:1px solid var(--border);padding-top:22px;text-align:center;color:var(--muted);font-size:.85rem}
 
@@ -292,6 +296,22 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 .contact-form .btn:hover svg{transform:translateX(5px) rotate(-14deg)}
 [data-plx]{will-change:transform}
 
+/* ============ SURGICAL UPGRADES (outcome lines, code links, marquee, grain) ============ */
+.p-outcome{font-weight:600;font-size:.93rem;color:var(--text);margin-bottom:12px}
+.code-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:.9rem;font-weight:600;color:var(--accent)}
+a.code-link:hover{text-decoration:underline}
+.code-link.na{color:var(--muted);font-weight:500;cursor:default}
+.skills-legend{display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:26px}
+.sl-item{display:inline-flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;color:var(--heading)}
+.sl-item::before{content:"";width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,var(--navy),var(--blue));flex:none}
+.marquee{overflow:hidden;padding:4px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marq 44s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.mq-set{display:flex;gap:12px;padding-right:12px;flex:none}
+.mq-set .chip{flex:none}
+@keyframes marq{to{transform:translateX(-50%)}}
+body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width:900px){
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
@@ -299,6 +319,8 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 @media (max-width:860px){
   .nav-links{display:none}
   .hamburger{display:inline-flex}
+  .icon-btn{width:44px;height:44px}
+  .mm-link{min-height:44px;display:flex;align-items:center}
 }
 @media (max-width:640px){
   .section{padding:78px 0}
@@ -327,6 +349,10 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
   .scroll-cue,.pulse-dot{animation:none}
   .hero-snow{display:none}
   .j-badge,.j-label,.tl-dot,.oiq-bar,.sprout-leaf,.yt-line{opacity:1;transform:none;animation:none}
+  .marquee-track{animation:none;width:auto;flex-wrap:wrap;gap:12px}
+  .marquee{-webkit-mask-image:none;mask-image:none}
+  .mq-set{flex-wrap:wrap}
+  .marquee-track .mq-set[aria-hidden="true"]{display:none}
   .timeline::before{transform:none;transition:none}
   .watch-pulse{stroke-dasharray:none;stroke-dashoffset:0}
   *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
@@ -459,7 +485,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
       </div>
       <div class="hero-meta reveal">
         <span><svg class="ic" width="16" height="16" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Colorado, USA · Open to remote</span>
-        <span><svg class="ic" width="16" height="16" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1 1 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>US work authorized · No sponsorship required</span>
+        <span><svg class="ic" width="16" height="16" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1 1 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>US work authorized · F-1 STEM OPT through 2029</span>
       </div>
     </div>
   </div>
@@ -572,7 +598,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
           <span class="fact-icon"><svg class="ic" width="20" height="20" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1 1 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
           <div>
             <div class="fact-label">Work Authorization</div>
-            <div class="fact-value">Authorized to work in the U.S. No sponsorship required</div>
+            <div class="fact-value">Authorized to work in the U.S. · F-1 STEM OPT through 2029</div>
           </div>
         </div>
         <div class="fact">
@@ -595,48 +621,19 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
       <div class="head-bar"></div>
       <p class="lede">Four buckets, one goal: getting from raw data to a confident decision.</p>
     </div>
-    <div class="skills-grid" data-stagger data-plx="-.04">
-      <div class="skill-card reveal">
-        <span class="skill-icon"><svg class="ic" width="22" height="22" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
-        <h3>Analytics &amp; Programming</h3>
-        <div class="chip-list">
-          <span class="chip">Python</span>
-          <span class="chip">SQL (PL/SQL)</span>
-          <span class="chip">R</span>
-          <span class="chip">Statistical Modeling</span>
-          <span class="chip">Machine Learning</span>
+    <div class="skills-legend reveal" data-plx="-.04">
+      <span class="sl-item">Analytics &amp; Programming</span>
+      <span class="sl-item">BI &amp; Visualization</span>
+      <span class="sl-item">Project &amp; Process</span>
+      <span class="sl-item">Tools &amp; Platforms</span>
+    </div>
+    <div class="marquee reveal" aria-label="Skills and tools">
+      <div class="marquee-track">
+        <div class="mq-set">
+          <span class="chip">Python</span><span class="chip">SQL (PL/SQL)</span><span class="chip">R</span><span class="chip">Statistical Modeling</span><span class="chip">Machine Learning</span><span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">Excel (Advanced)</span><span class="chip">Google Sheets</span><span class="chip">Root Cause Analysis</span><span class="chip">Trend Analysis</span><span class="chip">ROI Analysis</span><span class="chip">KPI Reporting</span><span class="chip">Process Improvement</span><span class="chip">Agile</span><span class="chip">Microsoft Office Suite</span><span class="chip">Oracle (fundamentals)</span><span class="chip">JIRA</span><span class="chip">Git</span>
         </div>
-      </div>
-      <div class="skill-card reveal">
-        <span class="skill-icon"><svg class="ic" width="22" height="22" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>
-        <h3>BI &amp; Visualization</h3>
-        <div class="chip-list">
-          <span class="chip">Tableau</span>
-          <span class="chip">Power BI</span>
-          <span class="chip">Excel (Advanced)</span>
-          <span class="chip">Google Sheets</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <span class="skill-icon"><svg class="ic" width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
-        <h3>Project &amp; Process</h3>
-        <div class="chip-list">
-          <span class="chip">Root Cause Analysis</span>
-          <span class="chip">Trend Analysis</span>
-          <span class="chip">ROI Analysis</span>
-          <span class="chip">KPI Reporting</span>
-          <span class="chip">Process Improvement</span>
-          <span class="chip">Agile</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <span class="skill-icon"><svg class="ic" width="22" height="22" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 12.18-9.17 4.16a2 2 0 0 1-1.66 0L2 12.18"/><path d="m22 17.18-9.17 4.16a2 2 0 0 1-1.66 0L2 17.18"/></svg></span>
-        <h3>Tools &amp; Platforms</h3>
-        <div class="chip-list">
-          <span class="chip">Microsoft Office Suite</span>
-          <span class="chip">Oracle (fundamentals)</span>
-          <span class="chip">JIRA</span>
-          <span class="chip">Git</span>
+        <div class="mq-set" aria-hidden="true">
+          <span class="chip">Python</span><span class="chip">SQL (PL/SQL)</span><span class="chip">R</span><span class="chip">Statistical Modeling</span><span class="chip">Machine Learning</span><span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">Excel (Advanced)</span><span class="chip">Google Sheets</span><span class="chip">Root Cause Analysis</span><span class="chip">Trend Analysis</span><span class="chip">ROI Analysis</span><span class="chip">KPI Reporting</span><span class="chip">Process Improvement</span><span class="chip">Agile</span><span class="chip">Microsoft Office Suite</span><span class="chip">Oracle (fundamentals)</span><span class="chip">JIRA</span><span class="chip">Git</span>
         </div>
       </div>
     </div>
@@ -658,7 +655,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
         <div class="tl-card">
           <div class="tl-top">
             <span class="tl-logo"><svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" fill="#1E4D2B"/><path d="M17 13 C10 13 8 20 12 24 C14 26 17 26 18 23" stroke="#C8C372" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M31 13 C38 13 40 20 36 24 C34 26 31 26 30 23" stroke="#C8C372" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M18 13 C18 9 30 9 30 13 L29 27 C29 33 19 33 19 27 Z" fill="#EFEAD9"/><circle cx="21" cy="19" r="1.6" fill="#1E4D2B"/><circle cx="27" cy="19" r="1.6" fill="#1E4D2B"/><path d="M22 27 L26 27 L24 30 Z" fill="#1E4D2B"/></svg></span>
-            <h3>Data Analyst &amp; Operations Supervisor</h3>
+            <h3>Student Supervisor — Operations &amp; Data Analysis</h3>
             <span class="date-pill">Aug 2025 - May 2026</span>
           </div>
           <div class="tl-sub">
@@ -717,10 +714,12 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
         </div>
         <h3>OpsIQ</h3>
         <p class="project-sub">Operational Intelligence Platform</p>
+        <p class="p-outcome">Nightly verified-sales and staff-performance KPIs, automated end to end</p>
         <p class="project-desc">End-to-end analytics platform built with Python and SQL to automate process monitoring, detect bottlenecks via root cause analysis, and surface real-time KPI dashboards.</p>
         <div class="chip-list">
           <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Dashboard</span><span class="chip">Process Analytics</span>
         </div>
+        <a class="code-link" href="https://github.com/saipraneeth2/OpsIQ" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8594;</span></a>
       </article>
       <article class="project-card reveal">
         <div class="project-top">
@@ -731,10 +730,12 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
         </div>
         <h3>SheSafe</h3>
         <p class="project-sub">Apple Watch Safety App</p>
+        <p class="p-outcome">28 automated tests · silent SOS in under 2 seconds</p>
         <p class="project-desc">Women's safety app for Apple Watch: triple-press the Digital Crown to silently trigger an emergency SOS call with a 5-second haptic countdown and one-tap cancel. Built with Swift and SwiftUI, backed by 28 automated tests.</p>
         <div class="chip-list">
           <span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">watchOS</span><span class="chip">XCTest</span>
         </div>
+        <a class="code-link" href="https://github.com/saipraneeth2/SheSafe_WatchOS" target="_blank" rel="noopener">View code <span aria-hidden="true">&#8594;</span></a>
       </article>
       <article class="project-card reveal">
         <div class="project-top">
@@ -742,10 +743,12 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
         </div>
         <h3>Agricultural Yield Forecasting</h3>
         <p class="project-sub">Predictive Modeling</p>
+        <p class="p-outcome">Regression and ensemble model benchmarked on multi-variable datasets</p>
         <p class="project-desc">Predictive model using regression and ensemble ML methods to forecast crop yield from multi-variable datasets.</p>
         <div class="chip-list">
           <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">Statistical Modeling</span><span class="chip">Regression</span>
         </div>
+        <span class="code-link na">Case study on request</span>
       </article>
       <article class="project-card reveal">
         <div class="project-top">
@@ -753,10 +756,12 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
         </div>
         <h3>YouTube Transcript Summarizer</h3>
         <p class="project-sub">AI / NLP Tool</p>
+        <p class="p-outcome">60% faster insight extraction from long transcripts</p>
         <p class="project-desc">AI/NLP tool that extracts and summarizes key insights from unstructured video transcript data.</p>
         <div class="chip-list">
           <span class="chip">Python</span><span class="chip">NLP</span><span class="chip">AI</span><span class="chip">Text Analytics</span>
         </div>
+        <span class="code-link na">Case study on request</span>
       </article>
     </div>
   </div>
@@ -985,7 +990,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
         if (mtsEl) { mtsEl.style.transform = 'translateY(' + (y * 0.22) + 'px)'; }
         if (heroContent) {
           heroContent.style.transform = 'translateY(' + (y * 0.14) + 'px)';
-          heroContent.style.opacity = Math.max(0, 1 - y / 620);
+          heroContent.style.opacity = Math.max(0, 1 - Math.max(0, y - 180) / 900);
         }
       }
       var vh = window.innerHeight;
