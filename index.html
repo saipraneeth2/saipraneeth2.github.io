@@ -312,6 +312,33 @@ a.code-link:hover{text-decoration:underline}
 @keyframes marq{to{transform:translateX(-50%)}}
 body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
 
+/* ============ STATS, PROCESS & CTA BANDS ============ */
+.stats{background:var(--bg-alt);padding:46px 0 10px;transition:background .3s ease}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{text-align:center}
+.stat-num{display:block;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.1;color:var(--accent)}
+.stat-label{display:block;margin-top:4px;font-size:.82rem;font-weight:500;color:var(--muted)}
+.process{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:840px;margin-bottom:54px}
+.process::before{content:"";position:absolute;top:16px;left:44px;right:44px;height:2px;background:linear-gradient(90deg,var(--accent-deep),var(--electric));opacity:.35}
+.p-num{display:inline-block;position:relative;z-index:1;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.2;color:var(--accent);background:var(--bg-alt);padding-right:12px;margin-bottom:8px;transition:background .3s ease}
+.p-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.98rem;color:var(--heading);margin-bottom:4px}
+.p-desc{font-size:.88rem;color:var(--muted);line-height:1.5}
+.cta-band{padding:96px 0}
+.cta-card{position:relative;overflow:hidden;text-align:center;background:linear-gradient(135deg,#131F36,#1F3864);border:1px solid rgba(78,158,255,.35);border-radius:22px;padding:58px 36px;box-shadow:0 24px 60px rgba(10,17,32,.45)}
+.cta-card::before{content:"";position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:70%;height:130%;background:radial-gradient(ellipse at center,rgba(78,158,255,.28),transparent 65%);pointer-events:none}
+.cta-card h2{position:relative;color:#FFFFFF;font-size:clamp(1.5rem,3.4vw,2.2rem);font-weight:700;letter-spacing:-.015em;line-height:1.25;margin-bottom:30px}
+.cta-actions{position:relative;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.cta-card .btn-ghost{border-color:rgba(255,255,255,.4);color:#FFFFFF}
+.cta-card .btn-ghost:hover{border-color:#FFFFFF;color:#FFFFFF}
+@media (max-width:700px){
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:26px 12px}
+  .process{grid-template-columns:1fr;gap:18px}
+  .process::before{display:none}
+  .cta-band{padding:72px 0}
+  .cta-card{padding:44px 22px}
+  .cta-actions{flex-direction:column;align-items:stretch}
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width:900px){
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
@@ -512,6 +539,18 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
   </a>
 </section>
 
+<!-- ============ STATS ============ -->
+<section class="stats" aria-label="Quick stats">
+  <div class="container">
+    <div class="stats-grid" data-stagger>
+      <div class="stat reveal"><span class="stat-num" data-count="2" data-suffix="+">2+</span><span class="stat-label">yrs ops &amp; analytics experience</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="4">4</span><span class="stat-label">projects shipped</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="5">5</span><span class="stat-label">core tools</span></div>
+      <div class="stat reveal"><span class="stat-num">MCIS</span><span class="stat-label">Colorado State '26</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section id="about" class="section alt">
   <div class="container">
@@ -648,6 +687,11 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
       <h2>Where I've made an impact</h2>
       <div class="head-bar"></div>
       <p class="lede">Different industries, same playbook: find the signal, fix the process, prove the impact.</p>
+    </div>
+    <div class="process" data-stagger>
+      <div class="p-step reveal"><span class="p-num">01</span><div class="p-title">Find the signal</div><p class="p-desc">Understand the business question</p></div>
+      <div class="p-step reveal"><span class="p-num">02</span><div class="p-title">Fix the process</div><p class="p-desc">Wrangle and model the data</p></div>
+      <div class="p-step reveal"><span class="p-num">03</span><div class="p-title">Prove the impact</div><p class="p-desc">Dashboards and decisions</p></div>
     </div>
     <div class="timeline" data-watch>
       <div class="tl-item reveal">
@@ -832,6 +876,24 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
     </div>
   </div>
 </section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-card reveal">
+      <h2>Hiring a Business or Data Analyst?<br>I'm available now.</h2>
+      <div class="cta-actions">
+        <a href="mailto:medisettisaipraneeth@gmail.com" class="btn btn-primary">Email Me
+          <svg class="ic" width="17" height="17" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        </a>
+        <a href="Sai_Praneeth_Medisetti_Resume.pdf" download class="btn btn-ghost">
+          <svg class="ic" width="17" height="17" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
@@ -973,6 +1035,30 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
     watched.forEach(function (el) { wo.observe(el); });
   } else {
     watched.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ---- Stat count-up (final values live in the HTML; JS only animates) ---- */
+  var statNums = document.querySelectorAll('[data-count]');
+  if (statNums.length && 'IntersectionObserver' in window &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) { return; }
+        var el = entry.target;
+        so.unobserve(el);
+        var target = parseInt(el.getAttribute('data-count'), 10);
+        var suffix = el.getAttribute('data-suffix') || '';
+        var t0 = null;
+        function tick(ts) {
+          if (!t0) { t0 = ts; }
+          var p = Math.min(1, (ts - t0) / 700);
+          el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+          if (p < 1) { requestAnimationFrame(tick); }
+        }
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.6 });
+    statNums.forEach(function (el) { so.observe(el); });
   }
 
   /* ---- Apple-style scroll parallax ---- */
