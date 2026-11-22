@@ -544,7 +544,7 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
   <div class="container">
     <div class="stats-grid" data-stagger>
       <div class="stat reveal"><span class="stat-num">IT PM</span><span class="stat-label">Graduate Certificate '26</span></div>
-      <div class="stat reveal"><span class="stat-num" data-count="7">7</span><span class="stat-label">projects</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="8">8</span><span class="stat-label">projects</span></div>
       <div class="stat reveal"><span class="stat-num" data-count="5">5</span><span class="stat-label">core tools</span></div>
       <div class="stat reveal"><span class="stat-num">MCIS</span><span class="stat-label">Colorado State '26</span></div>
     </div>
@@ -769,7 +769,7 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
       <span class="eyebrow">Projects</span>
       <h2>Selected work</h2>
       <div class="head-bar"></div>
-      <p class="lede">Analytics projects from customer churn and KPI dashboards to operational intelligence, plus a Bluetooth diagnostics app, two Apple Watch apps (safety and ride tracking), and SAP ERP coursework.</p>
+      <p class="lede">Analytics projects from customer churn and KPI dashboards to operational intelligence, plus a Bluetooth diagnostics app, two Apple Watch apps (safety and ride tracking), a Face ID approval app for the Mac, and SAP ERP coursework.</p>
     </div>
     <div class="projects-grid" data-stagger>
       <article class="project-card reveal">
@@ -849,6 +849,19 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
           <span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">watchOS</span><span class="chip">Core Location</span>
         </div>
         <a class="code-link" href="https://github.com/saipraneeth2/ScooterRide" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-glyph"><svg width="32" height="32" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 21 V15 C16 10.5 19.5 7 24 7 C28.5 7 32 10.5 32 15" stroke="#3A4657" stroke-width="3.5" fill="none" stroke-linecap="round"/><rect x="10" y="21" width="28" height="21" rx="5" fill="#3A4657"/><path d="M17 31.5 L22 36 L31 27" stroke="var(--gold)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 10 V5 H9 M39 5 H44 V10 M44 38 V43 H39 M9 43 H4 V38" stroke="var(--accent)" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".85"/></svg></span>
+        </div>
+        <h3>MacNearUnlock</h3>
+        <p class="project-sub">Face ID Approvals for a Locked Mac</p>
+        <p class="p-outcome">My iPhone's Face ID approves access requests for my locked Mac, verified end to end and tested on my own devices</p>
+        <p class="project-desc">macOS menu bar app and iPhone companion in Swift and SwiftUI. Each approval is a Secure Enclave signature, made only after a fresh Face ID match and sent over an encrypted channel set up by QR-code pairing. Authentication-only by default: Apple's public APIs don't let a third-party app unlock the login screen, so it verifies the approval and stops. 82 automated tests; 10 of 18 hardware checks passed, none failed. Built with AI assistance (Claude).</p>
+        <div class="chip-list">
+          <span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">CryptoKit</span><span class="chip">Secure Enclave</span>
+        </div>
+        <a class="code-link" href="https://github.com/saipraneeth2/MacNearUnlock" target="_blank" rel="noopener">View on GitHub</a>
       </article>
       <article class="project-card reveal">
         <div class="project-top">
