@@ -127,6 +127,7 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 .hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;letter-spacing:-.025em;line-height:1.06;margin-bottom:22px;background:linear-gradient(110deg,var(--heading) 45%,var(--accent) 78%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 .hero-subtitle{font-size:clamp(1.05rem,2.2vw,1.32rem);font-weight:600;color:var(--text);margin-bottom:16px}
 .hero-subtitle .sep{color:var(--accent);margin:0 12px;font-weight:400}
+@media (max-width:560px){.hero-subtitle{display:flex;flex-wrap:wrap;justify-content:center;gap:2px 16px}.hero-subtitle .sep{display:none}}
 .hero-tagline{font-size:clamp(1.02rem,2vw,1.2rem);color:var(--muted);margin-bottom:42px}
 .hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-bottom:46px}
 .hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 28px;color:var(--muted);font-size:.9rem}
@@ -301,9 +302,17 @@ body.menu-open .mobile-menu{opacity:1;transform:none;pointer-events:auto}
 .code-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:.9rem;font-weight:600;color:var(--accent)}
 a.code-link:hover{text-decoration:underline}
 .code-link.na{color:var(--muted);font-weight:500;cursor:default}
+.proj-group-title{font-family:'Space Grotesk',sans-serif;font-size:1.2rem;font-weight:700;color:var(--heading);margin:0 0 20px}
+.proj-group-title.second{margin-top:60px;margin-bottom:6px}
+.proj-group-note{color:var(--muted);font-size:.95rem;margin:0 0 22px}
 .skills-legend{display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:26px}
 .sl-item{display:inline-flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;color:var(--heading)}
 .sl-item::before{content:"";width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,var(--navy),var(--blue));flex:none}
+.skill-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (min-width:1100px){.skill-groups{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.skill-groups{grid-template-columns:1fr}}
+.skill-group{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px 20px 22px}
+.skill-group .sl-item{margin:0 0 14px}
 .marquee{overflow:hidden;padding:4px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
 .marquee-track{display:flex;width:max-content;animation:marq 44s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
@@ -499,7 +508,7 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
       <span class="hero-badge reveal"><span class="pulse-dot"></span>Open to full-time roles, available immediately</span>
       <p class="hero-eyebrow reveal">Hello, I'm</p>
       <h1 class="reveal">Sai Praneeth Medisetti</h1>
-      <p class="hero-subtitle reveal">Business Analyst <span class="sep">|</span> Data Analytics <span class="sep">|</span> Process Improvement</p>
+      <p class="hero-subtitle reveal"><span>Business Analyst</span> <span class="sep" aria-hidden="true">|</span> <span>Data Analytics</span> <span class="sep" aria-hidden="true">|</span> <span>Process Improvement</span></p>
       <p class="hero-tagline reveal">I turn messy data into clear decisions.</p>
       <div class="hero-cta reveal">
         <a href="#projects" class="btn btn-primary">View My Work
@@ -545,7 +554,7 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
     <div class="stats-grid" data-stagger>
       <div class="stat reveal"><span class="stat-num">IT PM</span><span class="stat-label">Graduate Certificate '26</span></div>
       <div class="stat reveal"><span class="stat-num" data-count="9">9</span><span class="stat-label">projects</span></div>
-      <div class="stat reveal"><span class="stat-num" data-count="5">5</span><span class="stat-label">core tools</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="15">15</span><span class="stat-label">staff trained</span></div>
       <div class="stat reveal"><span class="stat-num">MCIS</span><span class="stat-label">Colorado State '26</span></div>
     </div>
   </div>
@@ -614,7 +623,7 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p class="reveal">I'm a business and data analyst based in Colorado, originally from India, with <strong>experience in telecom and university dining operations</strong> turning operational data into decisions that stick. My path runs through a B.E. in Computer Science &amp; Engineering, a Master of Computer Information Systems and a Graduate Certificate in IT Project Management from Colorado State University, and hands-on operational analytics, so I'm equally comfortable writing SQL and sitting across from the stakeholders who have to act on it.</p>
+        <p class="reveal">I'm a business and data analyst based in Colorado, originally from India. Before graduate school I <strong>co-owned and ran a Vodafone Idea telecom franchise</strong>, and at Colorado State I supervised student staff in a high-volume dining hall; both taught me to turn operational data into decisions that stick. My path runs through a B.E. in Computer Science &amp; Engineering, a Master of Computer Information Systems and a Graduate Certificate in IT Project Management from Colorado State University, and hands-on operational analytics, so I'm equally comfortable writing SQL and sitting across from the stakeholders who have to act on it.</p>
         <p class="reveal">I specialize in <strong>Power BI and Advanced Excel</strong>, backed by working SQL, Python, and Tableau, using them to uncover insights, root-cause stubborn problems, and drive process improvements you can actually measure. From commission reconciliation at a telecom franchise to staffing and stocking reports at a university dining hall, I've built the reports, traced problems to their source, and documented the fixes.</p>
         <p class="reveal">What I care about most is the bridge between <strong>raw data and business strategy</strong>: making the numbers legible, the trade-offs explicit, and the next step obvious, whether that's building dashboards, automating recurring reports, or documenting the process so it sticks.</p>
       </div>
@@ -660,20 +669,22 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
       <div class="head-bar"></div>
       <p class="lede">Four buckets, one goal: getting from raw data to a confident decision.</p>
     </div>
-    <div class="skills-legend reveal" data-plx="-.04">
-      <span class="sl-item">Analytics &amp; Programming</span>
-      <span class="sl-item">BI &amp; Visualization</span>
-      <span class="sl-item">Project &amp; Process</span>
-      <span class="sl-item">Tools &amp; Platforms</span>
-    </div>
-    <div class="marquee reveal" aria-label="Skills and tools">
-      <div class="marquee-track">
-        <div class="mq-set">
-          <span class="chip">Power BI</span><span class="chip">Excel (Advanced)</span><span class="chip">Power Query</span><span class="chip">PivotTables</span><span class="chip">KPI Reporting</span><span class="chip">Report Automation</span><span class="chip">Operational Analysis</span><span class="chip">Requirements Gathering</span><span class="chip">Process Documentation</span><span class="chip">Process Improvement</span><span class="chip">Root Cause Analysis</span><span class="chip">Stakeholder Communication</span><span class="chip">Staff Training</span><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Tableau</span><span class="chip">JIRA</span><span class="chip">Power Pivot</span><span class="chip">VBA / Macros</span><span class="chip">AI &amp; LLM Workflows</span>
-        </div>
-        <div class="mq-set" aria-hidden="true">
-          <span class="chip">Power BI</span><span class="chip">Excel (Advanced)</span><span class="chip">Power Query</span><span class="chip">PivotTables</span><span class="chip">KPI Reporting</span><span class="chip">Report Automation</span><span class="chip">Operational Analysis</span><span class="chip">Requirements Gathering</span><span class="chip">Process Documentation</span><span class="chip">Process Improvement</span><span class="chip">Root Cause Analysis</span><span class="chip">Stakeholder Communication</span><span class="chip">Staff Training</span><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Tableau</span><span class="chip">JIRA</span><span class="chip">Power Pivot</span><span class="chip">VBA / Macros</span><span class="chip">AI &amp; LLM Workflows</span>
-        </div>
+    <div class="skill-groups" data-stagger>
+      <div class="skill-group reveal">
+        <h3 class="sl-item">BI &amp; Visualization</h3>
+        <div class="chip-list"><span class="chip">Power BI</span><span class="chip">Excel (Advanced)</span><span class="chip">Power Query</span><span class="chip">PivotTables</span><span class="chip">Power Pivot</span><span class="chip">Tableau</span><span class="chip">KPI Reporting</span><span class="chip">Report Automation</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="sl-item">Analytics &amp; Programming</h3>
+        <div class="chip-list"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">VBA / Macros</span><span class="chip">Operational Analysis</span><span class="chip">Root Cause Analysis</span><span class="chip">AI &amp; LLM Workflows</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="sl-item">Project &amp; Process</h3>
+        <div class="chip-list"><span class="chip">Requirements Gathering</span><span class="chip">Process Documentation</span><span class="chip">Process Improvement</span><span class="chip">Stakeholder Communication</span><span class="chip">Staff Training</span></div>
+      </div>
+      <div class="skill-group reveal">
+        <h3 class="sl-item">Tools &amp; Platforms</h3>
+        <div class="chip-list"><span class="chip">JIRA</span><span class="chip">Lucidchart</span><span class="chip">SAP ERP (coursework)</span></div>
       </div>
     </div>
   </div>
@@ -729,7 +740,8 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
             <span class="tl-loc"><svg class="ic" width="14" height="14" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Fort Collins, CO</span>
           </div>
           <ul>
-            <li>Supervised student staff across dining stations at one of CSU's high-volume dining halls.</li>
+            <li>Supervised 12 to 15 student staff per shift at one of CSU's high-volume dining halls.</li>
+            <li>Built recurring Excel reports tracking guest volume, wait times, restock delays, and safety pass rates, and presented to management where costs were climbing and why.</li>
             <li>Digitized attendance tracking for all non-student staff by building an Excel tracking sheet, replacing paper records and giving managers a searchable staffing history.</li>
             <li>Reorganized station stocking standards, cutting restock delays during peak service.</li>
             <li>Conducted daily quality, safety, and compliance checks; reported staffing and issue metrics to management.</li>
@@ -746,16 +758,17 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
             <span class="date-pill">Sep 2022 - Apr 2024</span>
           </div>
           <div class="tl-sub">
-            <span class="tl-company">Vodafone Idea (Cellular Franchise)</span>
+            <span class="tl-company">Vodafone Idea Franchise (Telecommunications)</span>
             <span class="tl-sep">·</span>
             <span class="tl-loc"><svg class="ic" width="14" height="14" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Bhimavaram, India</span>
           </div>
           <ul>
-            <li>Produced monthly revenue, commission, and inventory reports in Excel to drive pricing and stocking decisions.</li>
             <li>Traced a drifting commission-to-sales ratio to overlapping source-file imports that double-counted transactions, a $2,000+ reconciliation variance; fixed the import logic and added a duplicate-transaction-ID validation check.</li>
+            <li>Built the Power BI dashboards and Excel reports used for weekly and monthly planning across revenue, sales, churn, and commission KPIs.</li>
+            <li>Reconciled cash, billing, and inventory records daily, researching variances and resolving escalations with vendors.</li>
             <li>Managed vendor contracts, KYC/regulatory compliance, and billing accuracy across monthly activations, recharges, and billing transactions.</li>
             <li>Analyzed complaint and recharge patterns and redesigned the follow-up service model to reduce churn.</li>
-            <li>Trained staff and wrote procedural documentation.</li>
+            <li>Automated recurring reports with VBA macros; wrote the SOPs and process flows and trained 15 staff on them.</li>
           </ul>
         </div>
       </div>
@@ -769,8 +782,9 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
       <span class="eyebrow">Projects</span>
       <h2>Selected work</h2>
       <div class="head-bar"></div>
-      <p class="lede">Analytics projects from customer churn and KPI dashboards to operational intelligence, plus a Bluetooth diagnostics app, two Apple Watch apps (safety and ride tracking), a Face ID approval app for the Mac, an iPhone cycling-alerts prototype, and SAP ERP coursework.</p>
+      <p class="lede">Analytics and business work first: customer churn, a KPI dashboard, an operations platform in development, and SAP ERP coursework. Below that, five apps I built with AI assistance.</p>
     </div>
+    <h3 class="proj-group-title reveal">Analytics and business</h3>
     <div class="projects-grid" data-stagger>
       <article class="project-card reveal">
         <div class="project-top">
@@ -811,6 +825,23 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
         </div>
         <span class="code-link na">Case study on request</span>
       </article>
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-glyph"><svg width="32" height="32" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40 V22 L16 16 V24 L26 18 V26 L36 20 V12 H42 V40 Z" fill="#1E2634"/><rect x="11" y="30" width="5" height="5" rx="1" fill="var(--gold)"/><rect x="21" y="30" width="5" height="5" rx="1" fill="var(--accent)"/><rect x="31" y="30" width="5" height="5" rx="1" fill="var(--accent)" opacity=".6"/><path d="M38 6 C40 8 40 10 38 12" stroke="#3A4657" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
+        </div>
+        <h3>ERPsim Manufacturing Simulation</h3>
+        <p class="project-sub">SAP ERP: graduate coursework (CIS 601)</p>
+        <p class="p-outcome">Team of five running a simulated manufacturer in a live SAP system</p>
+        <p class="project-desc">HEC Montréal's ERPsim manufacturing games, Spring 2025. Our team planned production and purchasing with MRP, set prices with SAP product cost planning, moved from push to pull distribution across three regions, and cut setup time from 8 to 4 hours.</p>
+        <div class="chip-list">
+          <span class="chip">SAP ERP</span><span class="chip">MRP</span><span class="chip">Production Planning</span><span class="chip">Pricing</span>
+        </div>
+        <span class="code-link na">Graduate coursework</span>
+      </article>
+    </div>
+    <h3 class="proj-group-title second reveal">Apps I built with AI assistance</h3>
+    <p class="proj-group-note reveal">Side projects in Swift and SwiftUI, each built with AI assistance (Claude).</p>
+    <div class="projects-grid" data-stagger>
       <article class="project-card reveal">
         <div class="project-top">
           <span class="project-glyph"><svg width="32" height="32" viewBox="0 0 48 48" aria-hidden="true"><circle cx="12" cy="36" r="5" fill="none" stroke="var(--accent)" stroke-width="3"/><circle cx="37" cy="36" r="5" fill="none" stroke="var(--accent)" stroke-width="3"/><path d="M12 36 H30 L33 10 H38" stroke="#3A4657" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 22 L37 31" stroke="#3A4657" stroke-width="3" stroke-linecap="round"/><path d="M18 14 L24 19 L20 22 V8 L24 11 L18 16" stroke="var(--gold)" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -876,19 +907,6 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
         </div>
         <a class="code-link" href="https://github.com/saipraneeth2/rideaware" target="_blank" rel="noopener">View on GitHub</a>
       </article>
-      <article class="project-card reveal">
-        <div class="project-top">
-          <span class="project-glyph"><svg width="32" height="32" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40 V22 L16 16 V24 L26 18 V26 L36 20 V12 H42 V40 Z" fill="#1E2634"/><rect x="11" y="30" width="5" height="5" rx="1" fill="var(--gold)"/><rect x="21" y="30" width="5" height="5" rx="1" fill="var(--accent)"/><rect x="31" y="30" width="5" height="5" rx="1" fill="var(--accent)" opacity=".6"/><path d="M38 6 C40 8 40 10 38 12" stroke="#3A4657" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
-        </div>
-        <h3>ERPsim Manufacturing Simulation</h3>
-        <p class="project-sub">SAP ERP: graduate coursework (CIS 601)</p>
-        <p class="p-outcome">Team of five running a simulated manufacturer in a live SAP system</p>
-        <p class="project-desc">HEC Montréal's ERPsim manufacturing games, Spring 2025. Our team planned production and purchasing with MRP, set prices with SAP product cost planning, moved from push to pull distribution across three regions, and cut setup time from 8 to 4 hours.</p>
-        <div class="chip-list">
-          <span class="chip">SAP ERP</span><span class="chip">MRP</span><span class="chip">Production Planning</span><span class="chip">Pricing</span>
-        </div>
-        <span class="code-link na">Graduate coursework</span>
-      </article>
     </div>
   </div>
 </section>
@@ -924,6 +942,13 @@ body::after{content:"";position:fixed;inset:0;z-index:1200;pointer-events:none;o
             <div>
               <div class="row-label">LinkedIn</div>
               <div class="row-value">linkedin.com/in/sai-praneeth-medisetti-8b5820258</div>
+            </div>
+          </a>
+          <a href="https://github.com/saipraneeth2" target="_blank" rel="noopener" class="contact-row reveal">
+            <span class="fact-icon"><svg class="ic" width="20" height="20" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+            <div>
+              <div class="row-label">GitHub</div>
+              <div class="row-value">github.com/saipraneeth2</div>
             </div>
           </a>
         </div>
